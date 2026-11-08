@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <title>TrapRadar</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <img src="../icons/icon32.png" alt="" width="20" height="20" />
+      <h1>TrapRadar</h1>
+    </header>
+
+    <main id="content">
+      <p id="status" class="status">Scansione in corso…</p>
+      <ul id="findings" class="findings"></ul>
+      <p id="empty" class="empty" hidden>
+        Nessun dark pattern rilevato su questa pagina, al momento.
+      </p>
+    </main>
+
+    <footer>
+      <p>
+        Analisi 100% locale: nessun dato lascia il browser.
+        <a href="https://github.com/AndreaAcanfora/trapradar" target="_blank" rel="noopener">
+          Codice sorgente
+        </a>
+      </p>
+    </footer>
+
+    <script src="../src/patterns.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
