@@ -1,0 +1,16 @@
+{
+  "version": { "license": "MIT" },
+  "categories": { "firefox": ["privacy-security", "shopping"] },
+  "summary": {
+    "it": "Segnala abbonamenti nascosti, costi aggiunti al checkout, countdown finti e altri dark pattern. Tutto in locale: nessun dato lascia il browser.",
+    "en-US": "Flags hidden subscriptions, checkout drip pricing, fake countdowns and other dark patterns. Fully local: no data leaves your browser."
+  },
+  "description": {
+    "it": "TrapRadar ti avvisa mentre navighi quando una pagina usa trucchi per farti spendere di più o farti restare abbonato:\n\n• abbonamenti nascosti dopo una prova gratuita\n• costi aggiunti al checkout (\"contributo spese\", \"service fee\")\n• conti alla rovescia che si azzerano a ogni visita e finta scarsità\n• caselle già spuntate per newsletter, assicurazioni e partner\n• link di rifiuto colpevolizzanti (confirmshaming)\n• disdette possibili solo per telefono o raccomandata\n\nIl numero sull'icona dice quanti segnali ha trovato; cliccandola vedi cosa e perché, in parole semplici.\n\nPrivacy: l'analisi è tutta locale. Nessuna richiesta di rete, nessun account, nessuna telemetria. Codice open source (MIT).",
+    "en-US": "TrapRadar warns you while you browse when a page uses tricks to make you spend more or stay subscribed:\n\n• hidden subscriptions after a free trial\n• fees added at checkout (\"service fee\", \"booking fee\")\n• countdowns that reset on every visit and fake scarcity\n• pre-ticked boxes for newsletters, insurance and partners\n• guilt-tripping decline links (confirmshaming)\n• cancellations only by phone or registered mail\n\nThe number on the icon tells you how many signals it found; click it to see what and why, in plain words.\n\nPrivacy: all analysis is local. No network requests, no account, no telemetry. Open source (MIT).\n\nThe interface is in Italian; the heuristics read Italian and English pages."
+  },
+  "homepage": { "en-US": "https://github.com/AndreaAcanfora/trapradar" },
+  "support_urls": { "en-US": "https://github.com/AndreaAcanfora/trapradar/issues" },
+  "privacy_policy": { "en-US": "https://github.com/AndreaAcanfora/trapradar/blob/main/PRIVACY.md" },
+  "requires_payment": false
+}
