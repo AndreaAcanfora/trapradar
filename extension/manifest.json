@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "TrapRadar — Anti dark pattern",
+  "name": "TrapRadar: anti dark pattern",
   "short_name": "TrapRadar",
   "version": "0.1.0",
   "description": "Rileva localmente abbonamenti nascosti, costi aggiunti al checkout, countdown ingannevoli e altri dark pattern. Nessun dato lascia il browser.",
@@ -10,16 +10,27 @@
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  "permissions": ["storage", "activeTab", "scripting"],
-  "host_permissions": ["<all_urls>"],
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
   "background": {
     "service_worker": "src/background.js",
-    "scripts": ["src/background.js"]
+    "scripts": [
+      "src/background.js"
+    ]
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["src/patterns.js", "src/content.js"],
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "src/patterns.js",
+        "src/content.js"
+      ],
       "run_at": "document_idle",
       "all_frames": false
     }
@@ -36,7 +47,12 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "trapradar@andreaacanfora.dev",
-      "strict_min_version": "115.0"
+      "strict_min_version": "115.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
     }
   }
 }

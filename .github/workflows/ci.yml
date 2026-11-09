@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Heuristics tests
+        run: node extension/tests/patterns.test.js
+      - name: Package
+        run: scripts/package.sh
+      - name: Lint the package (addons.mozilla.org rules)
+        run: npx --yes web-ext@8 lint --source-dir extension --ignore-files tests
+      - uses: actions/upload-artifact@v4
+        with:
+          name: trapradar
+          path: dist/*.zip

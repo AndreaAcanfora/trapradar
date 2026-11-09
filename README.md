@@ -60,6 +60,9 @@ caricamento persistente in sviluppo usa un Firefox Developer Edition con
 Nessuna build richiesta: è JavaScript vanilla, nessuna dipendenza esterna.
 
 ```bash
+# Creare lo .zip per gli store (dist/trapradar-<versione>.zip)
+scripts/package.sh
+
 # Rigenerare le icone (richiede Pillow: pip install pillow)
 python3 scripts/gen_icons.py
 
@@ -82,9 +85,13 @@ extension/
     patterns.test.js   # test delle euristiche (node, nessuna dipendenza)
 scripts/
   gen_icons.py          # generazione icone programmatica
+  package.sh            # zip per addons.mozilla.org e Chrome Web Store
+store/                  # testi e metadati per gli store
 ```
 
 ## Privacy
+
+Informativa completa: [PRIVACY.md](PRIVACY.md).
 
 - Nessuna chiamata di rete nel codice dell'estensione.
 - Nessun server, nessun account, nessuna telemetria.
