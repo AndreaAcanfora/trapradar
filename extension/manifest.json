@@ -3,7 +3,7 @@
   "name": "TrapRadar: anti dark pattern",
   "short_name": "TrapRadar",
   "version": "0.1.0",
-  "description": "Rileva localmente abbonamenti nascosti, costi aggiunti al checkout, countdown ingannevoli e altri dark pattern. Nessun dato lascia il browser.",
+  "description": "Rileva abbonamenti nascosti, costi extra al checkout, countdown finti e altri dark pattern. Tutto in locale, senza inviare dati.",
   "icons": {
     "16": "icons/icon16.png",
     "32": "icons/icon32.png",
